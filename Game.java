@@ -116,6 +116,7 @@ public class Game {
 		// Solve board
 		} else if (input == 4) {
 			if (generated) {
+				board = new Board(newBoard);
 				solve();
 				solved = true;
 				board.print();
